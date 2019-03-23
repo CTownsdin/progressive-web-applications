@@ -41,37 +41,37 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 ## 6 - Media queries - Responsive Layout of Columns
 
 ```
-	<head>
-	  <meta charset="utf-8">
-	  <!-- IMPORTANT -->
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	  <title>responsive columns</title>
-	  <link rel="stylesheet" href="/css/main.css">
-	</head>
+<head>
+  <meta charset="utf-8">
+  <!-- IMPORTANT -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>responsive columns</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
 ```
 	
 ```
-	@media only screen and (min-width: 1600px) {
-	  .columns-container {
-	    column-count: 6;
-	  }
-	}
-	@media only screen and (max-width: 1599px) {
-	  .columns-container {
-	    column-count: 3;
-	  }
-	}
-	@media only screen and (max-width: 767px) {
-	  .columns-container {
-	    column-count: 2;
-	  }
-	}
-	@media only screen and (max-width: 479px) {
-	  .columns-container {
-	    column-count: 1;
-	  }
-	}
+@media only screen and (min-width: 1600px) {
+  .columns-container {
+    column-count: 6;
+  }
+}
+@media only screen and (max-width: 1599px) {
+  .columns-container {
+    column-count: 3;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .columns-container {
+    column-count: 2;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .columns-container {
+    column-count: 1;
+  }
+}
 ```
 
 
