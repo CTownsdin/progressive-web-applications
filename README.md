@@ -1,6 +1,6 @@
 Markdown guide --> [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-
+--------------------------------------------------
 ## Media queries - A Responsive Layout of Columns
 --------------------------------------------------
 
@@ -39,7 +39,7 @@ Markdown guide --> [GitHub Flavored Markdown](https://guides.github.com/features
   }
 }
 ```
-
+--------------------------------------------------
 ## Service Workers
 --------------------------------------------------
 - [x] Learn about Service Workers.
