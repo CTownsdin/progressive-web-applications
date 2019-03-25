@@ -1,8 +1,4 @@
-#Progressive Web Applications  
-
-#A PWA related github page and demo app using these technologies.
-
-Markdown guide, search here for all your formatting needs!---> [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Markdown guide --> [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 
 ## Media queries - A Responsive Layout of Columns
@@ -46,3 +42,5 @@ Markdown guide, search here for all your formatting needs!---> [GitHub Flavored 
 - [] Write a document about it.
 - [ ] Write another document about it.
 
+
+### Page is hosted at: https://ctownsdin.github.io/progressive-web-applications/
