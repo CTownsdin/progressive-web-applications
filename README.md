@@ -3,7 +3,7 @@ Markdown guide --> [GitHub Flavored Markdown](https://guides.github.com/features
 --------------------------------------------------
 ## Media queries - A Responsive Layout of Columns
 --------------------------------------------------
-
+   
 ### Meta Viewport Tag
 ```html
 <head>
@@ -39,12 +39,13 @@ Markdown guide --> [GitHub Flavored Markdown](https://guides.github.com/features
   }
 }
 ```
+   
 --------------------------------------------------
 ## Service Workers
 --------------------------------------------------
-- [x] Learn about Service Workers.
-- [] Write a document about it.
-- [ ] Write another document about it.
-
-
+[x] Learn about Service Workers.
+- [ ] Write a document about it.
+-- [ ] Write another document about it.
+   
 ### This page is hosted at: https://ctownsdin.github.io/progressive-web-applications/
+   
