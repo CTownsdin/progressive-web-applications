@@ -43,9 +43,9 @@ Markdown guide --> [GitHub Flavored Markdown](https://guides.github.com/features
 --------------------------------------------------
 ## Service Workers
 --------------------------------------------------
-[x] Learn about Service Workers.
+- [x] Learn about Service Workers.
 - [ ] Write a document about it.
--- [ ] Write another document about it.
+- [ ] Write another document about it.
    
 ### This page is hosted at: https://ctownsdin.github.io/progressive-web-applications/
    
