@@ -2,7 +2,9 @@ Markdown guide --> [GitHub Flavored Markdown](https://guides.github.com/features
 
 
 ## Media queries - A Responsive Layout of Columns
+--------------------------------------------------
 
+### Meta Viewport Tag
 ```html
 <head>
   <meta charset="utf-8">
@@ -14,6 +16,7 @@ Markdown guide --> [GitHub Flavored Markdown](https://guides.github.com/features
 </head>
 ```
 	
+### Media queries control column-count
 ```css
 @media only screen and (min-width: 1600px) {
   .columns-container {
@@ -38,9 +41,10 @@ Markdown guide --> [GitHub Flavored Markdown](https://guides.github.com/features
 ```
 
 ## Service Workers
+--------------------------------------------------
 - [x] Learn about Service Workers.
 - [] Write a document about it.
 - [ ] Write another document about it.
 
 
-### Page is hosted at: https://ctownsdin.github.io/progressive-web-applications/
+### This page is hosted at: https://ctownsdin.github.io/progressive-web-applications/
