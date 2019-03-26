@@ -1,5 +1,7 @@
 Markdown guide --> [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
+This page is hosted at --> https://ctownsdin.github.io/progressive-web-applications/
+
 ------
 ## Media queries - A Responsive Layout of Columns
 ------
@@ -16,7 +18,7 @@ Markdown guide --> [GitHub Flavored Markdown](https://guides.github.com/features
 </head>
 ```
 	
-### Media queries control column-count
+### Media queries controlling column-count
 ```css
 @media only screen and (min-width: 1600px) {
   .columns-container {
@@ -75,6 +77,7 @@ Markdown guide --> [GitHub Flavored Markdown](https://guides.github.com/features
 
 Images commonly make up around 60% of a web pages bytes. Optimizing images can deliver big dividends.
 
+```
 - <picture>
 - <source>
 - srcset
@@ -82,12 +85,15 @@ Images commonly make up around 60% of a web pages bytes. Optimizing images can d
     - w unit, tells the browser the pixel width prior to downloading
   - falls back to src
 - sizes
+```
 
 Things to consider:
+```
 - Resolution
 - Display Size
 - Format Support
 - Art Direction
+```
 
 ```html
 <p>Cascade of formats, uses best available first</p>
@@ -118,6 +124,3 @@ Things to consider:
 
 reference: https://developers.google.com/web/ilt/pwa/responsive-images-slides
 
-------
-## This page is hosted at: https://ctownsdin.github.io/progressive-web-applications/
-------
