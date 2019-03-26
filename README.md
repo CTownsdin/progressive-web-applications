@@ -120,8 +120,39 @@ Things to consider:
 
   <img src="bird_small.jpg" alt="A colorful bird" />
 </picture>
+
+<p>Three resolutions, two formats, and two crops per image really add up.</p>
+<picture>
+	<!-- 16:9 crop -->
+	<source
+		type="image/webp"
+		media="(min-width: 36em)"
+		srcset="quilt_2/detail/large.webp  1920w,
+		        quilt_2/detail/medium.webp  960w,
+		        quilt_2/detail/small.webp   480w" />
+	<source
+		media="(min-width: 36em)"
+		srcset="quilt_2/detail/large.jpg  1920w,
+		        quilt_2/detail/medium.jpg  960w,
+		        quilt_2/detail/small.jpg   480w" />
+	<!-- square crop -->
+	<source
+		type="image/webp"
+		srcset="quilt_2/square/large.webp   822w,
+		        quilt_2/square/medium.webp  640w,
+		        quilt_2/square/small.webp   320w" />
+	<source
+		srcset="quilt_2/square/large.jpg   822w,
+		        quilt_2/square/medium.jpg  640w,
+		        quilt_2/square/small.jpg   320w" />
+	<img
+		src="quilt_2/detail/medium.jpg"
+		alt="Detail of the above quilt, highlighting the embroidery and exotic stitchwork." />
+</picture>
 ```
 
 reference:
 https://developers.google.com/web/ilt/pwa/responsive-images-slides
+https://alistapart.com/article/responsive-images-in-practice
+
 
