@@ -41,17 +41,82 @@ Markdown guide --> [GitHub Flavored Markdown](https://guides.github.com/features
 ```
    
 ------
-## Service Workers
+## Service Workers (SW)
 ------
-- [x] Learn about Service Workers.
-- [ ] Write a document about it.
-- [ ] Write another document about it.
+
+### Register the SW within the index.html file.
+- [x] sw registered
+```html
+<script>
+	if ('serviceWorker' in navigator) {
+	  window.addEventListener('load', function() {
+	    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+	      // Registration was successful
+	      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+	    }, function(err) {
+	      // registration failed :(
+	      console.log('ServiceWorker registration failed: ', err);
+	    });
+	  });
+	}
+</script>
+```
+
+
 
 ------
 ## Fetch Networking
 ------
 
 
+------
+## Responsive Images
+------
+
+Images commonly make up around 60% of a web pages bytes. Optimizing images can deliver big dividends.
+
+- <picture>
+- <source>
+- srcset
+  - pixel density descriptors
+    - w unit, tells the browser the pixel width prior to downloading
+  - falls back to src
+- sizes
+
+Things to consider:
+- Resolution
+- Display Size
+- Format Support
+- Art Direction
+
+```html
+<p>Cascade of formats, uses best available first</p>
+<picture>
+  <source srcset="kittens.webp" type="image/webp">
+  <source srcset="kittens.jpg"  type="image/jpep">
+  <img src="kittens.jpg" alt="Two kittens">
+</picture>
+
+<p>Art Direction using Media Queries</p>
+<picture>
+  <source media="(min-width: 650px)" srcset="kitten-large.png">
+  <source media="(min-width: 465px)" srcset="kitten-medium.png">
+  <img src="kitten-small.jpg" alt="Cute kitten">
+</picture>
+
+<p>Art Direction with Media Queries AND Pixel Density Descriptors</p>
+<picture>
+  <source media="(min-width: 1000px)" 
+    srcset="bird_large_1x.jpg 1x, bird_large_2x.jpg 2x">
+
+  <source media="(min-width: 500px)" 
+    srcset="bird_med_1x.jpg 1x, bird_med_2x.jpg 2x">
+
+  <img src="bird_small.jpg" alt="A colorful bird" />
+</picture>
+```
+
+reference: https://developers.google.com/web/ilt/pwa/responsive-images-slides
 
 ------
 ## This page is hosted at: https://ctownsdin.github.io/progressive-web-applications/
