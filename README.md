@@ -2,6 +2,9 @@ Markdown guide --> [GitHub Flavored Markdown](https://guides.github.com/features
 
 This page is hosted at --> https://ctownsdin.github.io/progressive-web-applications/
 
+PWA Training Labs - https://developers.google.com/web/ilt/pwa/
+
+
 ------
 ## Media queries - A Responsive Layout of Columns
 ------
@@ -17,7 +20,7 @@ This page is hosted at --> https://ctownsdin.github.io/progressive-web-applicati
   <link rel="stylesheet" href="/css/main.css">
 </head>
 ```
-	
+  
 ### Media queries controlling column-count
 ```css
 @media only screen and (min-width: 1600px) {
@@ -50,17 +53,17 @@ This page is hosted at --> https://ctownsdin.github.io/progressive-web-applicati
 - [x] sw registered
 ```html
 <script>
-	if ('serviceWorker' in navigator) {
-	  window.addEventListener('load', function() {
-	    navigator.serviceWorker.register('/sw.js').then(function(registration) {
-	      // Registration was successful
-	      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-	    }, function(err) {
-	      // registration failed :(
-	      console.log('ServiceWorker registration failed: ', err);
-	    });
-	  });
-	}
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/sw.js').then(function(registration) {
+        // Registration was successful
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }, function(err) {
+        // registration failed :(
+        console.log('ServiceWorker registration failed: ', err);
+      });
+    });
+  }
 </script>
 ```
 
@@ -123,31 +126,31 @@ Things to consider:
 
 <p>Three resolutions, two formats, and two crops per image really add up.</p>
 <picture>
-	<!-- 16:9 crop -->
-	<source
-		type="image/webp"
-		media="(min-width: 36em)"
-		srcset="quilt_2/detail/large.webp  1920w,
-		        quilt_2/detail/medium.webp  960w,
-		        quilt_2/detail/small.webp   480w" />
-	<source
-		media="(min-width: 36em)"
-		srcset="quilt_2/detail/large.jpg  1920w,
-		        quilt_2/detail/medium.jpg  960w,
-		        quilt_2/detail/small.jpg   480w" />
-	<!-- square crop -->
-	<source
-		type="image/webp"
-		srcset="quilt_2/square/large.webp   822w,
-		        quilt_2/square/medium.webp  640w,
-		        quilt_2/square/small.webp   320w" />
-	<source
-		srcset="quilt_2/square/large.jpg   822w,
-		        quilt_2/square/medium.jpg  640w,
-		        quilt_2/square/small.jpg   320w" />
-	<img
-		src="quilt_2/detail/medium.jpg"
-		alt="Detail of the above quilt, highlighting the embroidery and exotic stitchwork." />
+  <!-- 16:9 crop -->
+  <source
+    type="image/webp"
+    media="(min-width: 36em)"
+    srcset="quilt_2/detail/large.webp  1920w,
+            quilt_2/detail/medium.webp  960w,
+            quilt_2/detail/small.webp   480w" />
+  <source
+    media="(min-width: 36em)"
+    srcset="quilt_2/detail/large.jpg  1920w,
+            quilt_2/detail/medium.jpg  960w,
+            quilt_2/detail/small.jpg   480w" />
+  <!-- square crop -->
+  <source
+    type="image/webp"
+    srcset="quilt_2/square/large.webp   822w,
+            quilt_2/square/medium.webp  640w,
+            quilt_2/square/small.webp   320w" />
+  <source
+    srcset="quilt_2/square/large.jpg   822w,
+            quilt_2/square/medium.jpg  640w,
+            quilt_2/square/small.jpg   320w" />
+  <img
+    src="quilt_2/detail/medium.jpg"
+    alt="Detail of the above quilt, highlighting the embroidery and exotic stitchwork." />
 </picture>
 ```
 
