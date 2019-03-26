@@ -7,7 +7,7 @@ PWA Training Labs - https://developers.google.com/web/ilt/pwa/
 
 ------
 ## Media queries - A Responsive Layout of Columns
-------
+
    
 ### Meta Viewport Tag
 ```html
@@ -47,7 +47,7 @@ PWA Training Labs - https://developers.google.com/web/ilt/pwa/
    
 ------
 ## Service Workers (SW)
-------
+
 
 ### Register the SW within the index.html file.
 - [x] sw registered
@@ -71,12 +71,12 @@ PWA Training Labs - https://developers.google.com/web/ilt/pwa/
 
 ------
 ## Fetch Networking
-------
+
 
 
 ------
 ## Responsive Images
-------
+
 
 Images commonly make up around 60% of a web pages bytes. Optimizing images can deliver big dividends.
 
@@ -152,10 +152,29 @@ Things to consider:
     src="quilt_2/detail/medium.jpg"
     alt="Detail of the above quilt, highlighting the embroidery and exotic stitchwork." />
 </picture>
-```
 
-reference:
+<figure>
+  <picture>
+    <source media="(min-width: 750px)"
+      srcset="images/horses-1600_large_2x.jpg 2x,
+              images/horses-800_large_1x.jpg" />
+    <source media="(min-width: 500px)" 
+      srcset="images/horses_medium.jpg" />
+    <img src="images/horses_small.jpg" alt="Horses in Hawaii">
+  </picture>
+  <figcaption>Horses in Hawaii</figcaption>
+</figure>
+```
 https://developers.google.com/web/ilt/pwa/responsive-images-slides
 https://alistapart.com/article/responsive-images-in-practice
+
+------
+## Video
+
+reference:  
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
+
+
+
 
 
