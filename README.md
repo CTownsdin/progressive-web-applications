@@ -122,5 +122,6 @@ Things to consider:
 </picture>
 ```
 
-reference: https://developers.google.com/web/ilt/pwa/responsive-images-slides
+reference:
+https://developers.google.com/web/ilt/pwa/responsive-images-slides
 
